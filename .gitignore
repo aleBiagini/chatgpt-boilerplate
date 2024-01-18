@@ -23,6 +23,11 @@ typings/
 # TypeScript cache
 *.tsbuildinfo
 
+#Env file
+#
+.env
+
+
 # Optional npm cache directory
 .npm
 
