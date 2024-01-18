@@ -1,0 +1,21 @@
+<form class="form">
+    <h2 class="h2">Inserisci la tua richiesta</h2>
+    <p class="p">Stai cercando il regalo perfetto? Scrivi una breve descrizione della persona a cui pensi, i vostri
+        momenti speciali e i suoi interessi. Sarà un piacere aiutarti a creare un regalo unico che le lasci un sorriso
+        sul viso! 😊</p>
+    <mat-form-field class="field">
+        <mat-label>Richiesta</mat-label>
+        <textarea matInput [formControl]="request"></textarea>
+    </mat-form-field>
+    <button class="button" mat-button (click)="submit()" color="primary">
+        Cerca il tuo regalo perfetto
+    </button>
+    <br>
+    <div *ngIf="result">
+        <h2 class="h2">Ecco i suggerimenti per te</h2>
+        <p class="p result">
+            {{result?.response}}
+        </p>
+    </div>
+
+</form>
